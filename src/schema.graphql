@@ -4,6 +4,10 @@ type Query {
   users(userID: String): [User]!
 }
 
+type Subscription {
+  count: Int!
+}
+
 input createUserInput {
   email: String!
   name: String!
