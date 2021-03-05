@@ -4,6 +4,24 @@ type Query {
   users(userID: String): [User]!
 }
 
+input createUserInput {
+  email: String!
+  name: String!
+  age: Int!
+  role: UserRole!
+}
+
+input createPostInput {
+  text: String!
+  authorId: String!
+  published: Boolean!
+}
+
+type Mutation {
+  createUser(data: createUserInput): User!
+  createPost(data: createPostInput): Post!
+}
+
 enum UserRole {
   EDITOR
   READER
