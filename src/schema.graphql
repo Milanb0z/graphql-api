@@ -1,0 +1,25 @@
+type Query {
+  test: String!
+  feed: [Post]!
+}
+
+enum UserRole {
+  EDITOR
+  READER
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  age: String!
+  posts: [Posts]!
+  role: UserRole!
+}
+
+type Post {
+  id: ID!
+  text: String!
+  author: User!
+  published: Boolean!
+}
