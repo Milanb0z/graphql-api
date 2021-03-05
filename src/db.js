@@ -1,27 +1,27 @@
 const users = [
   {
-    id: 1,
+    id: "1",
     name: "MilanB0z",
     email: "milanb0z@gmail.com",
-    age: 19,
+    age: "19",
     role: "EDITOR",
   },
   {
-    id: 2,
+    id: "2",
     name: "mARKO",
     email: "milanb0z@gmail.com",
     age: 19,
     role: "READER",
   },
   {
-    id: 3,
+    id: "3",
     name: "Ivica",
     email: "milanb0z@gmail.com",
     age: 19,
     role: "EDITOR",
   },
   {
-    id: 4,
+    id: "4",
     name: "Kerina",
     email: "milanb0z@gmail.com",
     age: 19,

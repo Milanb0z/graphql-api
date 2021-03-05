@@ -1,6 +1,7 @@
 type Query {
   test: String!
   feed: [Post]!
+  users(userID: String): [User]!
 }
 
 enum UserRole {
@@ -13,7 +14,7 @@ type User {
   name: String!
   email: String!
   age: String!
-  posts: [Posts]!
+  posts: [Post]!
   role: UserRole!
 }
 

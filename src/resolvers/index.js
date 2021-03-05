@@ -1,3 +1,5 @@
 const Query = require("./Query");
+const Post = require("./Post");
+const User = require("./User");
 
-module.exports = { Query };
+module.exports = { Query, User, Post };

@@ -1,6 +1,6 @@
 const User = {
-  posts(parrent, {}, { db }, info) {
-    const posts = db.posts.filter((post) => post.authot === parrent.id);
+  posts(parrent, args, { db }, info) {
+    const posts = db.posts.filter((post) => post.author === parrent.id);
     return posts;
   },
 };
